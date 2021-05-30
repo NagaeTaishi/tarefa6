@@ -1,0 +1,89 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>スライドショー</title>
+        <link rel="stylesheet" href="tarefa6.css">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    </head>  
+    <body>
+        <section class="container">
+            <div class="slider">
+                <div class="image">
+                    <img src="materials/madrid.jpeg" alt="Madrid">
+                    <a href="https://www.google.co.jp/maps/place/%E3%82%B9%E3%83%9A%E3%82%A4%E3%83%B3+%E3%83%9E%E3%83%89%E3%83%AA%E3%83%BC%E3%83%89/@40.4381311,-3.819621,11z/data=!3m1!4b1!4m5!3m4!1s0xd422997800a3c81:0xc436dec1618c2269!8m2!3d40.4167754!4d-3.7037902?hl=ja">
+                        <p>Madrid/Spain</p>
+                    </a>
+                </div>
+                <div class="image">
+                    <img src="materials/coimbra.jpeg" alt="Coimbra">
+                    <a href="https://www.google.co.jp/maps/place/%E3%83%9D%E3%83%AB%E3%83%88%E3%82%AC%E3%83%AB+%E3%82%B3%E3%82%A4%E3%83%B3%E3%83%96%E3%83%A9/@40.2288699,-8.4863144,12z/data=!3m1!4b1!4m5!3m4!1s0xd22f9144aacd16d:0x634564477b42a6b9!8m2!3d40.2033145!4d-8.4102573?hl=ja">
+                        <p>Coimbra/Portugal</p>
+                    </a>
+                </div>
+                <div class="image">
+                    <img src="materials/belohorizonte.jpeg" alt="BeloHorizonte">
+                    <a href="https://www.google.co.jp/maps/place/%E3%83%96%E3%83%A9%E3%82%B8%E3%83%AB+%E3%83%9F%E3%83%8A%E3%82%B9%E3%82%B8%E3%82%A7%E3%83%A9%E3%82%A4%E3%82%B9%E5%B7%9E+%E3%83%99%E3%83%AD%E3%83%BB%E3%82%AA%E3%83%AA%E3%82%BE%E3%83%B3%E3%83%86/@-19.9023386,-44.1041357,11z/data=!3m1!4b1!4m5!3m4!1s0xa690cacacf2c33:0x5b35795e3ad23997!8m2!3d-19.9166813!4d-43.9344931?hl=ja">
+                        <p>Belo Horizonte/Brazil</p>
+                    </a>
+                </div>
+                <div class="image">
+                    <img src="materials/tenjin.jpeg" alt="Tianjin">
+                    <a href="https://www.google.co.jp/maps/place/%E4%B8%AD%E8%8F%AF%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD+%E5%A4%A9%E6%B4%A5%E5%B8%82/@39.1252291,117.0153457,10z/data=!3m1!4b1!4m5!3m4!1s0x35edfc621e2c0e87:0x847194b730884031!8m2!3d39.3433574!4d117.3616476?hl=ja">
+                        <p>Tianjin/China</p>
+                    </a>
+                </div>
+                <div class="image">
+                    <img src="materials/lisboa.jpeg" alt="Lisboa">
+                    <a href="https://www.google.co.jp/maps/place/%E3%83%9D%E3%83%AB%E3%83%88%E3%82%AC%E3%83%AB+%E3%83%AA%E3%82%B9%E3%83%9C%E3%83%B3/@38.7437396,-9.2302433,12z/data=!3m1!4b1!4m9!1m2!2m1!1slisboa!3m5!1s0xd19331a61e4f33b:0x400ebbde49036d0!8m2!3d38.7198047!4d-9.140625!15sCgZsaXNib2GSAQhsb2NhbGl0eQ?hl=ja">
+                        <p>Lisboa/Portugal</p>
+                    </a>
+                </div>
+                <div class="image">
+                    <img src="materials/granada.jpeg" alt="granada">
+                    <a href="https://www.google.co.jp/maps/place/%E3%82%B9%E3%83%9A%E3%82%A4%E3%83%B3+%E3%82%B0%E3%83%A9%E3%83%8A%E3%83%80/@37.1810095,-3.6262912,13z/data=!3m1!4b1!4m5!3m4!1s0xd71fce62d32c27d:0x9258f79dd3600d72!8m2!3d37.1773363!4d-3.5985571?hl=ja">
+                        <p>Granada/Spain</p>
+                    </a>
+                </div>
+                <div class="image">
+                    <img src="materials/ribeiraopreto.jpeg" alt="RibeiraoPreto">
+                    <a href="https://www.google.co.jp/maps/place/%E3%83%96%E3%83%A9%E3%82%B8%E3%83%AB+%E3%82%B5%E3%83%B3%E3%83%BB%E3%83%91%E3%82%A6%E3%83%AD+%E3%83%AA%E3%83%99%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%BB%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88+%E3%82%B3%E3%83%B3%E3%82%AD%E3%82%B9%E3%82%BF+%E3%83%AA%E3%83%99%E3%82%A4%E3%83%A9%E3%83%B3%E3%83%BB%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/@-21.1794579,-47.8726264,12z/data=!3m1!4b1!4m5!3m4!1s0x94b9bf1d68acc21d:0x37b8ee0abedeea39!8m2!3d-21.1704008!4d-47.8103238?hl=ja">
+                        <p>Riberao Preto/Brazil</p>
+                    </a>
+                </div>
+                <div class="image">
+                    <img src="materials/porto.jpeg" alt="Porto">
+                    <a href="https://www.google.co.jp/maps/place/%E3%83%9D%E3%83%AB%E3%83%88%E3%82%AC%E3%83%AB+%E3%83%9D%E3%83%AB%E3%83%88/@41.1622023,-8.6569731,13z/data=!3m1!4b1!4m5!3m4!1s0xd2465abc4e153c1:0xa648d95640b114bc!8m2!3d41.1579438!4d-8.6291053?hl=ja">
+                        <p>Porto/Portugal</p>
+                    </a>
+                </div>
+                <div class="image">
+                    <img src="materials/buenosaires.jpeg" alt="buenosAires">
+                    <a href="https://www.google.co.jp/maps/place/%E3%82%A2%E3%83%AB%E3%82%BC%E3%83%B3%E3%83%81%E3%83%B3+%E3%83%96%E3%82%A8%E3%83%8E%E3%82%B9%E3%82%A2%E3%82%A4%E3%83%AC%E3%82%B9%E5%B7%9E+%E3%83%96%E3%82%A8%E3%83%8E%E3%82%B9%E3%82%A2%E3%82%A4%E3%83%AC%E3%82%B9/@-34.6156625,-58.5033384,12z/data=!3m1!4b1!4m5!3m4!1s0x95bcca3b4ef90cbd:0xa0b3812e88e88e87!8m2!3d-34.6036844!4d-58.3815591?hl=ja">
+                        <p>Buenos Aires/Argentina</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+　　
+　　<script type="text/javascript" src="jquery.js"></script>
+　　<script type="text/javascript" src="slick/slick.js"></script>
+　　<script>
+　　    $('.slider').slick({
+　　        infinite:true,
+　　        arrows:true,
+　　        dots:true,
+　　        autoplay:true,
+　　        autoplaySpeed:3500,
+
+　　        
+　　        });
+　　        
+　　        //矢印のスタイルを変更
+　　        //バックグラウンドカラーを変更する
+　　</script>
+　　</body>
+</html>
